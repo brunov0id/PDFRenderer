@@ -14,6 +14,8 @@
 		15061B4419F869D300EA09AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15061B4319F869D300EA09AD /* Images.xcassets */; };
 		15061B4719F869D300EA09AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15061B4519F869D300EA09AD /* LaunchScreen.xib */; };
 		15061B5319F869D300EA09AD /* PDFRendererTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15061B5219F869D300EA09AD /* PDFRendererTests.m */; };
+		15061B5E19F86ABE00EA09AD /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15061B5D19F86ABE00EA09AD /* PDFViewController.m */; };
+		15061B6019F86AD600EA09AD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15061B5F19F86AD600EA09AD /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		15061B4C19F869D300EA09AD /* PDFRendererTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFRendererTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15061B5119F869D300EA09AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15061B5219F869D300EA09AD /* PDFRendererTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFRendererTests.m; sourceTree = "<group>"; };
+		15061B5C19F86ABE00EA09AD /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
+		15061B5D19F86ABE00EA09AD /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		15061B5F19F86AD600EA09AD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15061B6019F86AD600EA09AD /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		15061B2A19F869D200EA09AD = {
 			isa = PBXGroup;
 			children = (
+				15061B5F19F86AD600EA09AD /* CoreText.framework */,
 				15061B3519F869D300EA09AD /* PDFRenderer */,
 				15061B4F19F869D300EA09AD /* PDFRendererTests */,
 				15061B3419F869D300EA09AD /* Products */,
@@ -85,6 +92,8 @@
 				15061B3B19F869D300EA09AD /* AppDelegate.m */,
 				15061B3D19F869D300EA09AD /* ViewController.h */,
 				15061B3E19F869D300EA09AD /* ViewController.m */,
+				15061B5C19F86ABE00EA09AD /* PDFViewController.h */,
+				15061B5D19F86ABE00EA09AD /* PDFViewController.m */,
 				15061B4019F869D300EA09AD /* Main.storyboard */,
 				15061B4319F869D300EA09AD /* Images.xcassets */,
 				15061B4519F869D300EA09AD /* LaunchScreen.xib */,
@@ -222,6 +231,7 @@
 				15061B3F19F869D300EA09AD /* ViewController.m in Sources */,
 				15061B3C19F869D300EA09AD /* AppDelegate.m in Sources */,
 				15061B3919F869D300EA09AD /* main.m in Sources */,
+				15061B5E19F86ABE00EA09AD /* PDFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PDFRenderer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PDFRenderer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
